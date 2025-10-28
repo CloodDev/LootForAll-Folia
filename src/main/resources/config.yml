@@ -1,0 +1,23 @@
+# LootForAll Configuration
+
+database:
+  # Database type: sqlite, mysql, mariadb
+  type: sqlite
+  
+  # SQLite settings (used when type is 'sqlite')
+  sqlite:
+    # Database file will be created in the plugin folder
+    filename: lootforall.db
+  
+  # Remote database settings (used when type is 'mysql' or 'mariadb')
+  remote:
+    host: localhost
+    port: 3306
+    database: lootforall
+    username: root
+    password: password
+    useSSL: false
+    allowPublicKeyRetrieval: true
+    maxPoolSize: 10
+    minIdle: 2
+    connectionTimeout: 30000
