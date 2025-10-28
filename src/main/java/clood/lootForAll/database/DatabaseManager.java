@@ -59,7 +59,7 @@ public class DatabaseManager {
     hikariConfig.setJdbcUrl(jdbcUrl);
     hikariConfig.setUsername(username);
     hikariConfig.setPassword(password);
-    hikariConfig.setDriverClassName("com.mysql.cj.jdbc.Driver");
+    hikariConfig.setDriverClassName("clood.lootforall.libs.mysql.cj.jdbc.Driver");
     hikariConfig.setMaximumPoolSize(config.getInt("database.remote.maxPoolSize", 10));
     hikariConfig.setMinimumIdle(config.getInt("database.remote.minIdle", 2));
     hikariConfig.setConnectionTimeout(config.getLong("database.remote.connectionTimeout", 30000));
